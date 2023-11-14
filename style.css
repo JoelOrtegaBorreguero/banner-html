@@ -1,0 +1,240 @@
+/* Importaciones  */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+/*  Mis clases y tal  */
+
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    padding-left: 15%;
+    padding-right: 15%;
+    color: white;
+    margin: 0%;
+    background-image: linear-gradient( 135deg,  #8d8d8d, #5a5a5a,  #535353, #313131, #000000);
+}
+
+@keyframes fanimado{
+      0%{
+        background-position: 0% 50%;
+      }
+      50%{
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      } 
+}
+
+#fila {
+    background-color: #ed6c32;
+    margin: 0%;
+    border: 0.1em solid #ed6c32;
+}
+
+#fila h3 {
+    margin-left: 5%;
+    font-size: 2em;
+    text-shadow: 3px 3px 3px black;
+}
+
+#fila h2 {
+    text-shadow: 4px 4px 4px black;
+}
+
+#titulo {
+    font-size: 5em;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    background-color: #ed6c32;
+}
+
+.ofertas {
+    background-color: #ed6d32;
+}
+
+.ofertas h3 {
+    margin-left: 5%;
+    font-size: 5em;
+}
+
+.ofertas-cajas {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    row-gap: 5%;
+    
+}
+
+.ofertas-cajas-contenido {
+    box-shadow: black;
+    box-shadow: 6px 6px 15px black;
+}
+
+.producto-anual {
+
+}
+
+.producto-anual h3 {
+    margin-left: 5%;
+    font-size: 5em;
+}
+
+.producto-anual-caja {
+    background-color: ;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-image: linear-gradient( 135deg, #00B7D4, #505488, #2F3F80, #161569, #5A4894, #FF7CAE);
+    background-size: 500%;
+    animation: fanimado 10s infinite;
+    box-shadow: 6px 6px 15px black;
+}
+
+.comentarios {
+    margin-top: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 200px;
+    margin-bottom: 5%;
+}
+
+.comentarios-hijo {
+    text-align: center;
+    border: 0.1em solid white;
+    background-color: beige;
+    color: #000000;
+    box-shadow: 6px 6px 15px white;
+    padding-bottom: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.comentarios-hijo img {
+    border-radius: 50%;
+    margin-top: -13%;
+    margin-bottom: 0em;
+}
+
+.comentarios-hijo-texto {
+    font-family: 'Lato', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .contenedor {
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 1px 1px 2px white;
+  }
+
+  .cartel {
+    width: 109px;
+    height: 109px;
+    padding: 10px 0px 5px 0px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px white;;
+  }
+  .cartel>div{
+    font-size: 1.5em;
+    font-family: 'Chela One', sans serif;
+    animation: fade 3s;
+    line-height: 30px;
+    margin-top: 5px;
+  }
+  .cartel>div>h3 {
+    margin-top: 15px;
+    font-weight: normal;
+  }
+  .h5 {
+    bottom: 0;
+    margin: 0 auto ;
+  }
+  .contenedor {
+    margin-top: 3%;
+  }
+  .contenido {
+    width: 80%;
+    margin: 0 auto;
+    border: 0px solid rgb(255, 255, 255);
+    z-index: 10;
+  }
+  li {
+    display: inline-block;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  li span {
+    display: block;
+  }
+  .numeros {
+    font-family: 'Chela one', sans-serif;
+    transition: .3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  .responsivo1 {
+    display: inline-block
+  }
+  .responsivo2 {
+    display: inline-block
+  }
+  @media (max-width: 450px) {  
+    .contenedor {
+      margin-top: 15%;
+    }
+    .banner {
+     margin-bottom: 30px; 
+    }
+    .cartel {
+      height: 99px;
+      width: 99px;
+    }
+    .cartel>div{
+      font-size: 45px;
+    }
+    .cartel>div>h3 {
+      font-size: 15px;
+      margin-top: 0px;
+    }
+  }
+  @keyframes fade {
+      0%   {
+        opacity: 0;
+    }
+      30%   {
+        opacity: 0;
+    }  
+      100% {
+        opacity: 1;
+    }
+  }
+
+#pata {
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    row-gap: 5%;
+    text-align: justify;
+    animation-name: fade;
+    animation-duration: 3s;
+}
